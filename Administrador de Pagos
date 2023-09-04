@@ -3,6 +3,7 @@ Algoritmo Pagos
 	definir Pedido como Entero
 	definir precio, PrecioTotal,Total Como Real
 	PrecioTotal=0
+	Total=0
 	Escribir "Hola querido cliente, ¿Que quiere comprar?"
 	Repetir
 		Escribir"1_Tomate"
@@ -31,8 +32,10 @@ Algoritmo Pagos
 			Escribir "Esta no es una opcion!"
 	Fin Segun
 	PrecioTotal=Total+PrecioTotal
+	Repetir 
 	 Escribir "Desea seguir comprando?(Si/NO)"
 	 Leer respuesta
+	 Hasta que respuesta="Si" O respuesta="No"
  Hasta que respuesta ="No"
  Escribir "Pago con tarjeta o efectivo?(T/Efec)"
  Escribir "Tenemos un 7% de descuento por pagos en efectivo"
